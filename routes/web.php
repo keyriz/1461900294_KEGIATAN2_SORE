@@ -18,7 +18,7 @@ use App\Http\Controllers\SemesterController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('siswa');
 });
 
 Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa');

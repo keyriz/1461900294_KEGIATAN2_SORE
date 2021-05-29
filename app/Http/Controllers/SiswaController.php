@@ -18,6 +18,7 @@ class SiswaController extends Controller
         $siswa = DB::table('siswa')
         ->join('kelas', 'siswa.id_kelas', '=', 'kelas.id_kelas')
         ->select('siswa.*', 'kelas.kelas')
+        ->where('siswa.id_kelas', '=', '02')
         ->get();
 
         return view('siswa', ['siswa' => $siswa]);
