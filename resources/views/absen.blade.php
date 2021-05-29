@@ -16,25 +16,33 @@
                         <thead class="border-b-2">
                             <tr>
                                 <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Nomor</th>
+                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">ID</th>
                                 <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">NIS</th>
-                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Nama</th>
-                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Kelas</th>
+                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Semester</th>
+                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Tanggal</th>
+                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Absen</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($siswa as $index => $value)
+                            @foreach($absen as $index => $value)
                             <tr>
                                 <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                     {{ $index + 1 }}
                                 </td>
                                 <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                                    {{ $value->id_absen }}
+                                </td>
+                                <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                     {{ $value->nis }}
                                 </td>
                                 <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                    {{ $value->nama }}
+                                    {{ $value->status }}
                                 </td>
                                 <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                    {{ $value->kelas }}
+                                    {{ $value->tanggal }}
+                                </td>
+                                <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                                    {{ $value->absen }}
                                 </td>
                             </tr>
                             @endforeach

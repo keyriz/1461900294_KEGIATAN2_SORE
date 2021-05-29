@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\AbsenController;
+use App\Http\Controllers\KelasController;
+use App\Http\Controllers\SemesterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +22,6 @@ Route::get('/', function () {
 });
 
 Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa');
-Route::get('/absen', [SiswaController::class, 'index'])->name('absen');
-Route::get('/kelas', [SiswaController::class, 'index'])->name('kelas');
-Route::get('/semester', [SiswaController::class, 'index'])->name('semester');
+Route::get('/absen', [AbsenController::class, 'index'])->name('absen');
+Route::get('/kelas', [KelasController::class, 'index'])->name('kelas');
+Route::get('/semester', [SemesterController::class, 'index'])->name('semester');

@@ -16,22 +16,18 @@
                         <thead class="border-b-2">
                             <tr>
                                 <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Nomor</th>
-                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">NIS</th>
-                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Nama</th>
+                                <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">ID</th>
                                 <th class="px-6 py-3 text-xs uppercase font-bold text-left bord">Kelas</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($siswa as $index => $value)
+                            @foreach($kelas as $index => $value)
                             <tr>
                                 <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                     {{ $index + 1 }}
                                 </td>
                                 <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                    {{ $value->nis }}
-                                </td>
-                                <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                    {{ $value->nama }}
+                                    {{ $value->id_kelas }}
                                 </td>
                                 <td class="border-t-0 px-6 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                     {{ $value->kelas }}
