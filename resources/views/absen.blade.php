@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="px-6 py-4 border-0">
-                    <h3 class="font-bold text-lg text-blueGray-700">Tabel Absen</h3>
+                    <h3 class="font-bold text-lg text-blueGray-700">Tabel Absen Berdasarkan Absen (A)</h3>
                 </div>
                 <div class="block w-full">
                     <table class="items-center w-full">

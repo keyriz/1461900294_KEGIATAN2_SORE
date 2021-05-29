@@ -18,6 +18,7 @@ class AbsenController extends Controller
         $absen = DB::table('absen')
         ->join('semester', 'absen.id_semester', '=', 'semester.id_semester')
         ->select('absen.*', 'semester.status')
+        ->where('absen', '=', 'A')
         ->get();
 
         return view('absen', ['absen' => $absen]);
